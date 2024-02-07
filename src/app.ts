@@ -15,3 +15,11 @@ if (age > 20) {
 }
 
 // console.log(isOld);
+
+const printOutput = (output: string | number) => console.log(output);
+
+const button = document.querySelector('button');
+
+if (button) {
+    button.addEventListener('click', (event) => console.log(event));
+}
