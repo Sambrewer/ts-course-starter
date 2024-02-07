@@ -21,3 +21,8 @@ if (button) {
 }
 
 printOutput(add(5));
+
+const hobbies = ['Sports', 'Cooking'];
+const activeHobbies = ['Hiking', ...hobbies];
+
+activeHobbies.push(...hobbies);

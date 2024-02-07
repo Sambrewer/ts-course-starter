@@ -12,3 +12,6 @@ if (button) {
     button.addEventListener('click', (event) => console.log(event));
 }
 printOutput(add(5));
+const hobbies = ['Sports', 'Cooking'];
+const activeHobbies = ['Hiking', ...hobbies];
+activeHobbies.push(...hobbies);
