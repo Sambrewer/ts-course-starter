@@ -4,11 +4,7 @@ let age = 26;
 
 age = 27;
 
-const add = (a: number, b: number) => {
-    let result;
-    result = a + b;
-    return result;
-};
+const add = (a: number, b: number = 1) => a + b;
 
 if (age > 20) {
     let isOld = true;
@@ -23,3 +19,5 @@ const button = document.querySelector('button');
 if (button) {
     button.addEventListener('click', (event) => console.log(event));
 }
+
+printOutput(add(5));
